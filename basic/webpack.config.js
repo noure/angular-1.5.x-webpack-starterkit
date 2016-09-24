@@ -14,10 +14,6 @@ const webpackConfig = {
 };
 
 module.exports = {
-  //context: path.join(__dirname, webpackConfig.appRoot),
-  devServer: {
-		//contentBase: path.join(__dirname, webpackConfig.publicPath)
-	},
   entry: webpackConfig.entry,
 	output: {
     publicPath: webpackConfig.publicPath,

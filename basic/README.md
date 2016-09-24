@@ -1,13 +1,20 @@
 
+
+### NPM Commands
+```
+npm start
+npm build
+```
+
 ### Starterkit setup
 
 *Install NPM Modules*
 ```bash
-npm install angular@1.5.8 --save
-npm install --save-dev babel-loader babel-core
-npm install babel-preset-es2015 --save-dev
-npm install clean-webpack-plugin --save-dev
-npm install babel-loader babel-core babel-preset-es2015 --save-dev
+npm install --save angular@1.5.8
+npm install --save-dev babel-loader
+npm install --save-dev babel-core
+npm install --save-dev babel-preset-es2015
+npm install --save-dev clean-webpack-plugin
 npm install --save-dev file-loader
 npm install --save-dev webpack-dev-server
 ```
@@ -71,10 +78,6 @@ const webpackConfig = {
 };
 
 module.exports = {
-  //context: path.join(__dirname, webpackConfig.appRoot),
-  devServer: {
-		//contentBase: path.join(__dirname, webpackConfig.publicPath)
-	},
   entry: webpackConfig.entry,
 	output: {
     publicPath: webpackConfig.publicPath,
